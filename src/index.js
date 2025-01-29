@@ -1,17 +1,14 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 
-
-
-
+//const element = React.createElement('hi', null, 'Hello React World');
 const TodoList = () => {
-    const items = ['Install React', 'Study Reac', 'Use React', 'Build React App'];
     return (
         <ul>
-            <li>{items[0]}</li>
-            <li>{items[1]}</li>
-            <li>{items[2]}</li>
-            <li>{items[3]}</li>
+            <li>Install React</li>
+            <li>Study React</li>
+            <li>Use React</li>
+            <li>Build React App</li>
         </ul>
     );
 };
@@ -21,30 +18,12 @@ const AppHeader = () =>{
 };
 
 const SearchPanel = () => {
-
-    const searchText = 'Type here to search';
-    const searchStyle = {
-        fontSize: '20px'
-    };
-
-    // return <input placeholder="search" />;
-    return <input
-        style = {searchStyle}
-        placeholder= {searchText}
-        disabled={true} />;
+    return <input placeholder="search" />;
 }
 
 const App = () => {
-
-    const value = '<script>alert ("")</script>';
-    // const isLoggedIn = false;
-    // const loginBox = <span>Log in to the system</span>;
-    // const welcomeBox = <span>Welcome Back</span>;
-
     return (
         <div>
-            {/*{ isLoggedIn ? null : loginBox }*/}
-            { value }
             <AppHeader />
             <SearchPanel />
             <TodoList/>
