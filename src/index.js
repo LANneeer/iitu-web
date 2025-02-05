@@ -3,6 +3,7 @@ import AppHeader from "./components/app-header";
 import SearchPanel from "./components/search-panel";
 import TodoList from "./components/todo-list";
 import ItemStatusFilter from "./components/item-status-filter";
+import "./index.css";
 import { createRoot } from "react-dom/client";
 
 const App = () => {
@@ -12,7 +13,6 @@ const App = () => {
     { label: "Make notes from your stud", important: false, id: 3 },
     { label: "Do not drink alchohol", important: false, id: 4 },
   ];
-
   return (
     <div>
       <AppHeader />
